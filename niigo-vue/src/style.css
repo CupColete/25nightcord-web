@@ -1,0 +1,23 @@
+/* src/style.css */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body, html {
+  width: 100%;
+  height: 100%;
+  /* 确保整个网页背景都是这个暗色，没有白边 */
+  background-color: #1a1a24; 
+  scroll-behavior: smooth; /* 开启丝滑滚动动画 */
+  scroll-padding-top: 70px; /* 预留出顶部导航栏的高度，防止遮挡标题 */
+}
+
+/* 如果有 #app，把 Vite 默认的居中和边距去掉 */
+#app {
+  width: 100%;
+  padding: 0;
+  margin: 0;
+  max-width: none;
+}
